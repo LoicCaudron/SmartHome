@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/valeurs"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="39dp"
+        android:text="Valeurs actuelles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/valeurs"
+        android:layout_marginTop="92dp"
+        android:text="Température [°C]" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="-17dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/valeurs"
+        android:layout_marginTop="160dp"
+        android:text="Humidité [%]" />
+
+    <EditText
+        android:id="@+id/hum"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginEnd="-158dp"
+        android:layout_marginTop="-17dp"
+        android:layout_toStartOf="@+id/temp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/valeurs"
+        android:layout_marginTop="234dp"
+        android:text="Niveau de la batterie [%]" />
+
+    <EditText
+        android:id="@+id/batt"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginTop="-17dp"
+        android:layout_toEndOf="@+id/valeurs"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/verifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:text="Vérifier" />
+
+</RelativeLayout>
