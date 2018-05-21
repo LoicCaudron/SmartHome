@@ -77,27 +77,32 @@ public class CheckActivity extends AppCompatActivity {
 
                     if(temp_check>temp_max){
                         String message = "Ouvre un peu une fenêtre. Il fait chaud ici! Il fait " + temp_check +"°C";
-                        SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        //SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        sms(message);
                     }
 
                     if(humidity_check<humidity_min){
                         String message = "Il fait sec ici:" + humidity_check + "%. Ouvre une fenêtre pour aérer un peu.";
-                        SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        //SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        sms(message);
                     }
 
                     if(humidity_check>humidity_max){
                         String message = "Il fait tellement humide ici:" + humidity_check + "% que je vais croire qu'il pleut à l'intérieur.";
-                        SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        //SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        sms(message);
                     }
 
                     if(battery_check<battery_min){
                         String message = "Il est temps de changer ma batterie. Je suis à plat. Il ne me reste que " + battery_check + "%.";
-                        SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        //SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        sms(message);
                     }
 
                     if(battery_check>battery_max){
                         String message = "Je ne sais pas ce qu'il m'arrive. Je suis survolté, ma batterie atteint " + battery_check + "%.";
-                        SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        //SmsManager.getDefault().sendTextMessage(phone_num, null, message, null, null );
+                        sms(message);
                     }
                 }
                 catch(Exception e){
