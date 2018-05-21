@@ -1,5 +1,7 @@
 package com.example.einore.smarthome.controller;
 
+//Application réalisée par Caudron Loïc et Giudice Fiona
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
